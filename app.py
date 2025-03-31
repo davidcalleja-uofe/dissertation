@@ -9,6 +9,8 @@ from xgboost import XGBClassifier  # Ensure xgboost is installed
 # ---------------------------
 @st.cache_data
 def load_model(model_file):
+    subprocess.run(["python", "train_model.py"], check=True)
+    st.success("Model trained successfully and saved as 'xgb_model_ewes.pkl'")
     try:
         with open(model_file, "rb") as f:
             model = pickle.load(f)
