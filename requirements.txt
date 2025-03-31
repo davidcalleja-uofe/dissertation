@@ -1,7 +1,7 @@
-streamlit
+streamlit as st
 xgboost
-pandas
-numpy
+pandas as pd
+numpy as np
 scikit-learn
 scikit-optimize
 scipy
