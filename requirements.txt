@@ -2,7 +2,6 @@ streamlit
 xgboost
 pandas
 numpy
-pickle
 subprocess
 os
 scikit-learn
