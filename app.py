@@ -4,6 +4,10 @@ import numpy as np
 import pickle
 import subprocess
 import os
+import scikit-learn 
+import scipy
+import skopt 
+import pickle
 from xgboost import XGBClassifier  # Ensure xgboost is installed
 
 # ---------------------------
