@@ -5,6 +5,6 @@ numpy
 pickle
 subprocess
 os
-scikit-learn 
+sklearn 
 scipy
 skopt 
