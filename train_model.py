@@ -1,3 +1,5 @@
+from skopt import BayesSearchCV
+from skopt.space import Real, Integer
 # --- Data Preprocessing Function ---
 def preprocess_data(df, drop_col, target=None, recode_map=None):
     """
