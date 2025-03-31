@@ -2,6 +2,8 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import os
+from skopt import BayesSearchCV
+from skopt.space import Real, Integer
 # ---------------------------
 # Helper: Load Pre-Trained Model
 # ---------------------------
