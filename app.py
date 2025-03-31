@@ -4,7 +4,7 @@ import numpy as np
 import pickle
 import subprocess
 import os
-import scikit-learn 
+import sklearn 
 import scipy
 import skopt 
 import pickle
