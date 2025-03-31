@@ -1,13 +1,13 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import os
 # ---------------------------
 # Helper: Load Pre-Trained Model
 # ---------------------------
 @st.cache_data
 def load_model(model_file):
-    subprocess.run(["python", "train_model.py"], check=True)
-    st.success("Model trained successfully and saved as 'xgb_model_ewes.pkl'")
+    os.system("python train_model.py")
     try:
         with open(model_file, "rb") as f:
             model = pickle.load(f)
