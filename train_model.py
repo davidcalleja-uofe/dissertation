@@ -87,3 +87,25 @@ lambs_recode_map = {'never': 0, 'before': 1, 'during': 1}
 print("Training model for Lambs...")
 lambs_model = train_and_save_model(lambs_df, 'Unnamed: 0', lambs_target, lambs_recode_map, 
                                    lambs_predictors, "xgb_model_lambs.pkl")
+
+
+import streamlit as st
+import pandas as pd
+import numpy as np
+import pickle
+import requests
+from io import BytesIO
+
+# ---------------------------
+# Helper: Load Pre-Trained Model
+# ---------------------------
+@st.cache_data
+def load_model():
+    # Load model directly from GitHub
+    model_url = "https://github.com/your-username/your-repo/blob/main/xgb_model_ewes.pkl?raw=true"  # Adjust URL
+    response = requests.get(model_url)
+    model_file = BytesIO(response.content)
+    model = pickle.load(model_file)
+    return model
+
+model = load_model()
