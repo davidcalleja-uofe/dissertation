@@ -2,8 +2,6 @@ streamlit
 xgboost
 pandas
 numpy
-subprocess
-os
 scikit-learn
 scipy
 skopt 
