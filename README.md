@@ -4,4 +4,4 @@ Contains code used for my honours thesis at the University of Edinburgh: Can lam
   
 - Multiple predictors file contains main ML model discussed in dissertation using multivariate analysis. Includes attempts at model optimization.
 
-- "app.py" and "train_model.py" contain the code for the Streamlit app and can be used for deployment. 
+- "app.py" and "train_model.py" contain the code for the Streamlit app and can be used for deployment. "requirements.txt" contains libraries required for Streamlit deployment.
